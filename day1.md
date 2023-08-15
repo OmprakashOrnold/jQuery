@@ -1104,6 +1104,26 @@ These examples demonstrate various animation techniques using jQuery. Feel free 
    - Downloading the jQuery library from the official website.
    - Adding the jQuery script tag to the HTML document using the `<script>` tag.
 
+   To include jQuery in HTML documents, you can follow these steps:
+
+1. Download the jQuery library from the official website (https://jquery.com/download/). Choose the version you prefer (e.g., compressed or uncompressed).
+
+2. Save the downloaded jQuery file (e.g., "jquery.min.js") to a location within your project directory.
+
+3. Open your HTML document in a text editor or an integrated development environment (IDE).
+
+4. Add the following script tag to the head or body section of your HTML document:
+
+```html
+<script src="path/to/jquery.min.js"></script>
+```
+
+Replace "path/to/jquery.min.js" with the actual path to the jQuery file you downloaded in step 2. If the file is in the same directory as your HTML document, you can simply use the file name without any path.
+
+5. Save the HTML document.
+
+Now, your HTML document is ready to use jQuery. You can start using jQuery functions and features by writing JavaScript code within script tags in your HTML document or by linking external JavaScript files that use jQuery.
+
 # 3. Studying selectors and traversing the DOM:
    - Using CSS selectors to target specific elements in the DOM, such as `$("p")` to select all `<p>` elements.
    - Traversing the DOM tree using methods like `.parent()`, `.children()`, or `.find()` to select elements based on their relationship to other elements.
