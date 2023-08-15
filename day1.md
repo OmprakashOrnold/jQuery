@@ -172,7 +172,6 @@ jQuery is a fast, small, and feature-rich JavaScript library. It simplifies HTML
 ### ii. **Modifying Elements:**
    jQuery provides methods to modify the content and attributes of selected elements. 
 
-   Sure! Here are 50 examples of modifying elements using jQuery:
 
 1. **Changing Text Content:**
 ```javascript
@@ -432,8 +431,6 @@ These examples demonstrate various ways to modify elements using jQuery. Remembe
 ### iii. **Adding and Removing Elements:**
    jQuery makes it easy to add or remove elements from the DOM. 
 
-   Certainly! Here are 50 examples of adding and removing elements using jQuery:
-
 1. **Appending an Element:**
 ```javascript
 $('#parentElement').append('<div>New element</div>');
@@ -687,7 +684,365 @@ $('#videoId').attr('height', 480);
 These examples demonstrate various ways to add and remove elements using jQuery. Replace `#parentElement`, `#existingElement`, `#elementToRemove`, etc., with the actual IDs or selectors of the elements you want to manipulate.
 
 ### iv. **Event Handling:**
-   jQuery simplifies event handling by providing methods to attach event handlers to elements.   
+   jQuery simplifies event handling by providing methods to attach event handlers to elements.  
+
+   Sure! Here are 50 examples of event handling using jQuery, written in Markdown (md) syntax:
+
+1. **Click Event**: Attach a click event handler to a button element.
+```javascript
+$('#myButton').click(function() {
+  // Code to be executed when the button is clicked
+});
+```
+
+2. **Double Click Event**: Attach a double click event handler to an image element.
+```javascript
+$('img').dblclick(function() {
+  // Code to be executed when the image is double clicked
+});
+```
+
+3. **Mouse Enter Event**: Attach a mouse enter event handler to a div element.
+```javascript
+$('div').mouseenter(function() {
+  // Code to be executed when the mouse enters the div
+});
+```
+
+4. **Mouse Leave Event**: Attach a mouse leave event handler to a paragraph element.
+```javascript
+$('p').mouseleave(function() {
+  // Code to be executed when the mouse leaves the paragraph
+});
+```
+
+5. **Keydown Event**: Attach a keydown event handler to the document.
+```javascript
+$(document).keydown(function(event) {
+  // Code to be executed when a key is pressed down
+});
+```
+
+6. **Keyup Event**: Attach a keyup event handler to an input element.
+```javascript
+$('input').keyup(function() {
+  // Code to be executed when a key is released
+});
+```
+
+7. **Submit Event**: Attach a submit event handler to a form element.
+```javascript
+$('form').submit(function(event) {
+  // Code to be executed when the form is submitted
+});
+```
+
+8. **Change Event**: Attach a change event handler to a select element.
+```javascript
+$('select').change(function() {
+  // Code to be executed when the select value changes
+});
+```
+
+9. **Focus Event**: Attach a focus event handler to an input element.
+```javascript
+$('input').focus(function() {
+  // Code to be executed when the input element receives focus
+});
+```
+
+10. **Blur Event**: Attach a blur event handler to a textarea element.
+```javascript
+$('textarea').blur(function() {
+  // Code to be executed when the textarea loses focus
+});
+```
+
+11. **Resize Event**: Attach a resize event handler to the window.
+```javascript
+$(window).resize(function() {
+  // Code to be executed when the window is resized
+});
+```
+
+12. **Scroll Event**: Attach a scroll event handler to a div element.
+```javascript
+$('div').scroll(function() {
+  // Code to be executed when the div is scrolled
+});
+```
+
+13. **Load Event**: Attach a load event handler to an image element.
+```javascript
+$('img').load(function() {
+  // Code to be executed when the image is loaded
+});
+```
+
+14. **Unload Event**: Attach an unload event handler to the window.
+```javascript
+$(window).unload(function() {
+  // Code to be executed when the window is unloaded
+});
+```
+
+15. **Error Event**: Attach an error event handler to an image element.
+```javascript
+$('img').error(function() {
+  // Code to be executed when the image fails to load
+});
+```
+
+16. **Toggle Event**: Attach a toggle event handler to a button element.
+```javascript
+$('#myButton').toggle(function() {
+  // Code to be executed when the button is toggled on
+}, function() {
+  // Code to be executed when the button is toggled off
+});
+```
+
+17. **Hover Event**: Attach a hover event handler to a div element.
+```javascript
+$('div').hover(function() {
+  // Code to be executed when the mouse enters the div
+}, function() {
+  // Code to be executed when the mouse leaves the div
+});
+```
+
+18. **Contextmenu Event**: Attach a contextmenu event handler to a paragraph element.
+```javascript
+$('p').contextmenu(function() {
+  // Code to be executed when the paragraph is right-clicked
+});
+```
+
+19. **Mousedown Event**: Attach a mousedown event handler to a button element.
+```javascript
+$('button').mousedown(function() {
+  // Code to be executed when the mouse button is pressed down
+});
+```
+
+20. **Mouseup Event**: Attach a mouseup event handler to a div element.
+```javascript
+$('div').mouseup(function() {
+  // Code to be executed when the mouse button is released
+});
+```
+
+21. **Mousemove Event**: Attach a mousemove event handler to a span element.
+```javascript
+$('span').mousemove(function() {
+  // Code to be executed when the mouse moves over the span
+});
+```
+
+22. **Select Event**: Attach a select event handler to an input element.
+```javascript
+$('input').select(function() {
+  // Code to be executed when the input text is selected
+});
+```
+
+23. **Copy Event**: Attach a copy event handler to a textarea element.
+```javascript
+$('textarea').copy(function() {
+  // Code to be executed when the text is copied
+});
+```
+
+24. **Cut Event**: Attach a cut event handler to an input element.
+```javascript
+$('input').cut(function() {
+  // Code to be executed when the text is cut
+});
+```
+
+25. **Paste Event**: Attach a paste event handler to a div element.
+```javascript
+$('div').paste(function() {
+  // Code to be executed when the text is pasted
+});
+```
+
+26. **Dragstart Event**: Attach a dragstart event handler to an image element.
+```javascript
+$('img').dragstart(function() {
+  // Code to be executed when the image drag starts
+});
+```
+
+27. **Dragend Event**: Attach a dragend event handler to a div element.
+```javascript
+$('div').dragend(function() {
+  // Code to be executed when the drag operation ends
+});
+```
+
+28. **Dragenter Event**: Attach a dragenter event handler to a div element.
+```javascript
+$('div').dragenter(function() {
+  // Code to be executed when the dragged element enters the div
+});
+```
+
+29. **Dragleave Event**: Attach a dragleave event handler to a span element.
+```javascript
+$('span').dragleave(function() {
+  // Code to be executed when the dragged element leaves the span
+});
+```
+
+30. **Dragover Event**: Attach a dragover event handler to a div element.
+```javascript
+$('div').dragover(function() {
+  // Code to be executed when the dragged element is over the div
+});
+```
+
+31. **Drop Event**: Attach a drop event handler to a div element.
+```javascript
+$('div').drop(function() {
+  // Code to be executed when the dragged element is dropped on the div
+});
+```
+
+32. **Animationstart Event**: Attach an animationstart event handler to a div element.
+```javascript
+$('div').animationstart(function() {
+  // Code to be executed when the animation starts
+});
+```
+
+33. **Animationend Event**: Attach an animationend event handler to a span element.
+```javascript
+$('span').animationend(function() {
+  // Code to be executed when the animation ends
+});
+```
+
+34. **Animationiteration Event**: Attach an animationiteration event handler to a div element.
+```javascript
+$('div').animationiteration(function() {
+  // Code to be executed when the animation iteration starts
+});
+```
+
+35. **Transitionstart Event**: Attach a transitionstart event handler to a button element.
+```javascript
+$('button').transitionstart(function() {
+  // Code to be executed when the CSS transition starts
+});
+```
+
+36. **Transitionend Event**: Attach a transitionend event handler to a div element.
+```javascript
+$('div').transitionend(function() {
+  // Code to be executed when the CSS transition ends
+});
+```
+
+37. **Transitionrun Event**: Attach a transitionrun event handler to a span element.
+```javascript
+$('span').transitionrun(function() {
+  // Code to be executed when the CSS transition is running
+});
+```
+
+38. **Pointerdown Event**: Attach a pointerdown event handler to a div element.
+```javascript
+$('div').pointerdown(function() {
+  // Code to be executed when the pointer is pressed down
+});
+```
+
+39. **Pointerup Event**: Attach a pointerup event handler to a button element.
+```javascript
+$('button').pointerup(function() {
+  // Code to be executed when the pointer is released
+});
+```
+
+40. **Pointermove Event**: Attach a pointermove event handler to a span element.
+```javascript
+$('span').pointermove(function() {
+  // Code to be executed when the pointer moves over the span
+});
+```
+
+41. **Pointerenter Event**: Attach a pointerenter event handler to a div element.
+```javascript
+$('div').pointerenter(function() {
+  // Code to be executed when the pointer enters the div
+});
+```
+
+42. **Pointerleave Event**: Attach a pointerleave event handler to a button element.
+```javascript
+$('button').pointerleave(function() {
+  // Code to be executed when the pointer leaves the button
+});
+```
+
+43. **Pointerover Event**: Attach a pointerover event handler to a span element.
+```javascript
+$('span').pointerover(function() {
+  // Code to be executed when the pointer is over the span
+});
+```
+
+44. **Pointerout Event**: Attach a pointerout event handler to a div element.
+```javascript
+$('div').pointerout(function() {
+  // Code to be executed when the pointer is out of the div
+});
+```
+
+45. **Pointercancel Event**: Attach a pointercancel event handler to a button element.
+```javascript
+$('button').pointercancel(function() {
+  // Code to be executed when the pointer is canceled
+});
+```
+
+46. **Gotpointercapture Event**: Attach a gotpointercapture event handler to a div element.
+```javascript
+$('div').gotpointercapture(function() {
+  // Code to be executed when the element gets pointer capture
+});
+```
+
+47. **Lostpointercapture Event**: Attach a lostpointercapture event handler to a span element.
+```javascript
+$('span').lostpointercapture(function() {
+  // Code to be executed when the element loses pointer capture
+});
+```
+
+48. **Touchstart Event**: Attach a touchstart event handler to a div element.
+```javascript
+$('div').touchstart(function() {
+  // Code to be executed when a touch starts on the div
+});
+```
+
+49. **Touchend Event**: Attach a touchend event handler to a button element.
+```javascript
+$('button').touchend(function() {
+  // Code to be executed when a touch ends on the button
+});
+```
+
+50. **Touchmove Event**: Attach a touchmove event handler to a span element.
+```javascript
+$('span').touchmove(function() {
+  // Code to be executed when a touch moves over the span
+});
+```
+
+These are just a few examples of the many event handling options available in jQuery. You can attach event handlers to various elements and perform different actions based on user interactions or other events.
 
 ### v **Animations:**
    jQuery includes built-in animation methods that allow you to create smooth transitions and effects. 
