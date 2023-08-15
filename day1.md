@@ -1047,6 +1047,59 @@ These are just a few examples of the many event handling options available in jQ
 ### v **Animations:**
    jQuery includes built-in animation methods that allow you to create smooth transitions and effects. 
 
+1. **Fade In**: `$('#element').fadeIn();`
+2. **Fade Out**: `$('#element').fadeOut();`
+3. **Fade Toggle**: `$('#element').fadeToggle();`
+4. **Slide Down**: `$('#element').slideDown();`
+5. **Slide Up**: `$('#element').slideUp();`
+6. **Slide Toggle**: `$('#element').slideToggle();`
+7. **Show**: `$('#element').show();`
+8. **Hide**: `$('#element').hide();`
+9. **Toggle**: `$('#element').toggle();`
+10. **Animate**: `$('#element').animate({opacity: '0.5', left: '200px'}, 'slow');`
+11. **Stop Animation**: `$('#element').stop();`
+12. **Delay**: `$('#element').delay(1000).fadeIn();`
+13. **Chaining**: `$('#element').fadeOut().delay(500).fadeIn();`
+14. **Custom Animation**: `$('#element').animate({width: '200px', height: '200px'}, 1000);`
+15. **Custom Easing**: `$('#element').animate({left: '200px'}, {duration: 1000, easing: 'easeOutBounce'});`
+16. **Queue**: `$('#element').animate({width: '200px'}, 'slow').animate({height: '200px'}, 'slow');`
+17. **Callback Function**: `$('#element').fadeOut('slow', function() { alert('Animation complete.'); });`
+18. **Multiple Elements**: `$('.elements').fadeIn();`
+19. **Relative Values**: `$('#element').animate({left: '+=200px'}, 'slow');`
+20. **Toggle Class**: `$('#element').toggleClass('highlight');`
+21. **Custom Speed**: `$('#element').fadeIn(2000);`
+22. **Custom Queue Name**: `$('#element').animate({width: '200px'}, {duration: 1000, queue: 'customQueue'});`
+23. **Stop All Animations**: `$('#element').stop(true, true);`
+24. **Animate Height**: `$('#element').animate({height: '200px'}, 'slow');`
+25. **Animate Width**: `$('#element').animate({width: '200px'}, 'slow');`
+26. **Animate Color**: `$('#element').animate({color: '#ff0000'}, 'slow');`
+27. **Animate Font Size**: `$('#element').animate({fontSize: '20px'}, 'slow');`
+28. **Animate Background Color**: `$('#element').animate({backgroundColor: '#000000'}, 'slow');`
+29. **Animate Opacity**: `$('#element').animate({opacity: '0.5'}, 'slow');`
+30. **Animate Scroll**: `$('html, body').animate({scrollTop: '200px'}, 'slow');`
+31. **Animate Multiple Properties**: `$('#element').animate({width: '200px', height: '200px'}, 'slow');`
+32. **Animate Multiple Elements**: `$('.elements').animate({opacity: '0.5'}, 'slow');`
+33. **Animate Chain**: `$('#element').animate({width: '200px'}, 'slow').animate({height: '200px'}, 'slow').animate({opacity: '0.5'}, 'slow');`
+34. **Animate Callback Function**: `$('#element').animate({width: '200px'}, 'slow', function() { alert('Animation complete.'); });`
+35. **Animate Easing**: `$('#element').animate({left: '200px'}, {duration: 1000, easing: 'easeOutBounce'});`
+36. **Animate Queue**: `$('#element').animate({width: '200px'}, {duration: 1000, queue: 'customQueue'});`
+37. **Animate Stop**: `$('#element').animate({width: '200px'}, 'slow').stop();`
+38. **Animate Delay**: `$('#element').delay(1000).fadeIn('slow');`
+39. **Animate Slide Down**: `$('#element').slideDown('slow');`
+40. **Animate Slide Up**: `$('#element').slideUp('slow');`
+41. **Animate Slide Toggle**: `$('#element').slideToggle('slow');`
+42. **Animate Show**: `$('#element').show('slow');`
+43. **Animate Hide**: `$('#element').hide('slow');`
+44. **Animate Toggle**: `$('#element').toggle('slow');`
+45. **Animate Toggle Class**: `$('#element').toggleClass('highlight', 'slow');`
+46. **Animate Relative Values**: `$('#element').animate({left: '+=200px'}, 'slow');`
+47. **Animate Multiple Properties with Callback**: `$('#element').animate({width: '200px', height: '200px'}, 'slow', function() { alert('Animation complete.'); });`
+48. **Animate Multiple Elements with Callback**: `$('.elements').animate({opacity: '0.5'}, 'slow', function() { alert('Animation complete.'); });`
+49. **Animate Multiple Elements with Custom Easing**: `$('.elements').animate({opacity: '0.5'}, {duration: 1000, easing: 'easeOutBounce'});`
+50. **Animate Multiple Elements with Custom Speed**: `$('.elements').fadeIn(2000);`
+
+These examples demonstrate various animation techniques using jQuery. Feel free to modify them according to your needs.
+
 # 2. Including jQuery in HTML documents:
    - Downloading the jQuery library from the official website.
    - Adding the jQuery script tag to the HTML document using the `<script>` tag.
