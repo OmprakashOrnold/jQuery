@@ -1131,3 +1131,259 @@ Now, your HTML document is ready to use jQuery. You can start using jQuery funct
 # 4. Exploring filtering techniques and manipulating elements dynamically:
    - Filtering elements based on specific criteria, such as `$(".class-name")` to select elements with a specific class.
    - Manipulating elements dynamically by changing their content, attributes, or properties using methods like `.text()`, `.attr()`, or `.css()`.
+
+### Filtering Elements:
+
+1. Select all elements with a specific class:
+```javascript
+$(".class-name")
+```
+
+2. Select all elements with a specific ID:
+```javascript
+$("#element-id")
+```
+
+3. Select all `<p>` elements:
+```javascript
+$("p")
+```
+
+4. Select all elements that are direct children of a specific element:
+```javascript
+$("#parent-element > *")
+```
+
+5. Select all elements that are descendants of a specific element:
+```javascript
+$("#ancestor-element *")
+```
+
+6. Select the first element of a specific type:
+```javascript
+$("element-type:first")
+```
+
+7. Select the last element of a specific type:
+```javascript
+$("element-type:last")
+```
+
+8. Select even-indexed elements:
+```javascript
+$("element-type:even")
+```
+
+9. Select odd-indexed elements:
+```javascript
+$("element-type:odd")
+```
+
+10. Select elements that contain a specific text:
+```javascript
+$("element-type:contains('text')")
+```
+
+Manipulating Elements Dynamically:
+
+11. Change the text content of an element:
+```javascript
+$("#element-id").text("new text")
+```
+
+12. Append content to an element:
+```javascript
+$("#element-id").append("appended content")
+```
+
+13. Prepend content to an element:
+```javascript
+$("#element-id").prepend("prepended content")
+```
+
+14. Remove an element from the DOM:
+```javascript
+$("#element-id").remove()
+```
+
+15. Hide an element:
+```javascript
+$("#element-id").hide()
+```
+
+16. Show a hidden element:
+```javascript
+$("#element-id").show()
+```
+
+17. Toggle the visibility of an element:
+```javascript
+$("#element-id").toggle()
+```
+
+18. Add a CSS class to an element:
+```javascript
+$("#element-id").addClass("class-name")
+```
+
+19. Remove a CSS class from an element:
+```javascript
+$("#element-id").removeClass("class-name")
+```
+
+20. Check if an element has a specific CSS class:
+```javascript
+$("#element-id").hasClass("class-name")
+```
+
+21. Get the value of an input field:
+```javascript
+$("#input-field-id").val()
+```
+
+22. Set the value of an input field:
+```javascript
+$("#input-field-id").val("new value")
+```
+
+23. Get the HTML content of an element:
+```javascript
+$("#element-id").html()
+```
+
+24. Set the HTML content of an element:
+```javascript
+$("#element-id").html("<p>new content</p>")
+```
+
+25. Get the value of a specific attribute of an element:
+```javascript
+$("#element-id").attr("attribute-name")
+```
+
+26. Set the value of a specific attribute of an element:
+```javascript
+$("#element-id").attr("attribute-name", "new value")
+```
+
+27. Remove a specific attribute from an element:
+```javascript
+$("#element-id").removeAttr("attribute-name")
+```
+
+28. Get the CSS value of a specific property of an element:
+```javascript
+$("#element-id").css("property-name")
+```
+
+29. Set the CSS value of a specific property of an element:
+```javascript
+$("#element-id").css("property-name", "new value")
+```
+
+30. Get the width of an element:
+```javascript
+$("#element-id").width()
+```
+
+31. Set the width of an element:
+```javascript
+$("#element-id").width("new width")
+```
+
+32. Get the height of an element:
+```javascript
+$("#element-id").height()
+```
+
+33. Set the height of an element:
+```javascript
+$("#element-id").height("new height")
+```
+
+34. Fade in an element:
+```javascript
+$("#element-id").fadeIn()
+```
+
+35. Fade out an element:
+```javascript
+$("#element-id").fadeOut()
+```
+
+36. Slide down an element:
+```javascript
+$("#element-id").slideDown()
+```
+
+37. Slide up an element:
+```javascript
+$("#element-id").slideUp()
+```
+
+38. Animate an element's properties:
+```javascript
+$("#element-id").animate({ property: value }, duration)
+```
+
+39. Clone an element:
+```javascript
+$("#element-id").clone()
+```
+
+40. Wrap an element with another element:
+```javascript
+$("#element-id").wrap("<div class='wrapper'></div>")
+```
+
+41. Replace an element with another element:
+```javascript
+$("#element-id").replaceWith("<div class='new-element'></div>")
+```
+
+42. Empty the content of an element:
+```javascript
+$("#element-id").empty()
+```
+
+43. Get the position of an element relative to the document:
+```javascript
+$("#element-id").offset()
+```
+
+44. Scroll to a specific element:
+```javascript
+$("#element-id").scrollIntoView()
+```
+
+45. Disable a button or input field:
+```javascript
+$("#element-id").prop("disabled", true)
+```
+
+46. Enable a button or input field:
+```javascript
+$("#element-id").prop("disabled", false)
+```
+
+47. Get the parent element of an element:
+```javascript
+$("#element-id").parent()
+```
+
+48. Get the direct children of an element:
+```javascript
+$("#element-id").children()
+```
+
+49. Find descendant elements of an element:
+```javascript
+$("#element-id").find(".descendant-class")
+```
+
+50. Filter elements based on a specific condition:
+```javascript
+$("element-type").filter(function() {
+  return $(this).attr("attribute-name") === "value";
+})
+```
